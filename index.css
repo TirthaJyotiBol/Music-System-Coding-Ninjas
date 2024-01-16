@@ -1,0 +1,295 @@
+
+/* Make the body background as black and white
+    used during the toggle
+*/
+
+::-webkit-scrollbar {
+    width: 0px;
+  }
+::-webkit-scrollbar-thumb{
+    background: blue;
+}
+
+
+.makeBlack{
+    background-color: black;
+}
+
+.makeWhite{
+    background-color: white;
+}
+
+/* Navbar */
+.nav-bar{
+    height: 10vh;
+    width: 95vw;
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+}
+
+#toggle-icon{
+    font-size: 3rem;
+    cursor: pointer;
+    color: red;
+    background-color: transparent;
+    padding-right: 2%;
+    transition: background-color 0.8s ease;
+}
+
+/* Music heading */
+.heading{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+/* Music Body Section */
+
+#music-section{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-left: 3%;
+}
+
+
+.music-section-normalMode{
+    background-color: rgb(21, 17, 88);
+}
+
+.lhs-music-section,.mid-music-player,.rhs-music-player {
+    height: 120vh;
+    width: 28vw;
+    margin-left: 2%;
+    overflow-y: scroll;
+}
+
+/* Filter heading */
+.filter-heading{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-left: -10px;
+    margin-top: 10px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.filter-heading #dropdown{
+    padding: 8px;
+    font-size: 16px;
+    margin-left: 4px;
+    /* background-color: #09ff00; */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.heading-all-songs{
+    text-align: center;
+    text-transform: uppercase;
+    margin-left: -15px;
+    color: white;
+}
+
+ul{
+    list-style: none;
+}
+
+.all-songs-music-normal-mode {
+    height: 30px;
+    width: 87%;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    background: transparent;
+    border: 0.1px solid white;
+    color: white;
+}
+
+.all-songs-music-normal-mode:hover{
+    cursor: pointer;
+    background-color: rgba(24, 20, 104, 0.623);
+}
+
+
+.all-songs-music-dark-mode {
+    height: 30px;
+    width: 87%;
+    margin-top: 5%;
+    padding: 2%;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    background: rgb(0, 0, 0);
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.all-songs-music-dark-mode:hover{
+    background-color: rgba(0, 0, 0, 0.836);;
+}
+
+
+#search-music-input{
+    margin-left: 8%;
+    padding: 8px;
+    width: 80%;
+}
+
+
+
+/* RHS */
+
+.createPlaylist_heading{
+    display: flex;
+    height: 10%;
+    width: 100%;
+    border: none;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+#input-create-playlist{
+    padding: 10px;
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+#create-playlist-button,#search-playlist{
+    padding: 10px;
+    cursor: pointer;
+}
+
+
+#all-playlist-heading,#my-created-playlist-heading{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+/* Images section */
+
+.prev-image{
+    height: 30vh;
+    width: 60%;
+    margin-left: 20%;
+    margin-top: 25px;
+    border: 1px solid;
+    border-radius: 50%;
+    transition: 0.5s ease-in;
+}
+
+.prev-image:hover{
+    opacity: 0.5;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+.image_section_image{
+    width: 100%;
+    height: 45vh;
+    display: none;
+}
+
+#music-name,#artist-Name{
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+audio {
+    width: 99%;
+    border: 2px solid white;
+    border-radius: 0;
+    background: white;
+    height: 70px;
+    padding-bottom: 5px;
+    color: white;
+    display: none;
+}
+
+audio::-webkit-media-controls-panel {
+    background-color: white;
+  }
+
+
+  icons{
+    color: white;
+    font-size: 1.8rem;
+    margin-left: 35%;
+    display: none;
+  }
+
+  icons>i{
+    border: 1px solid white !important;
+    padding: 15px;
+    border-radius: 50%;
+    margin: 3px;
+    cursor: pointer;
+    margin-top: 15px;
+    transition: 0.3s ease-in-out;
+  }
+
+  icons>i:hover{
+    background-color: rgba(240, 248, 255, 0.342);
+  }
+
+  /* Button to add music to playlist */
+  #music-add-to-playlist{
+    padding: 15px;
+    margin-top: 5%;
+    margin-left: 5%;
+    width: 90%;
+    border: 3px solid;
+    border-color: yellow;
+    background-color: transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 1.5rem;
+    transition: 0.8s ease-in-out;
+    text-transform: uppercase;
+    display: none;
+  }
+
+  #music-add-to-playlist:hover{
+    border: 3px solid !important;
+    border-color: rgba(255, 255, 255, 0.473);
+}
+
+
+/* Delete music from playlist */
+.delete-music-playlist-icon{
+    color: red;
+    font-size: 1.3rem;
+    margin-top: -25px;
+    margin-left: 90%;
+    cursor: pointer;
+}
+
+.delete-music-playlist-icon:hover{
+    color: white;
+}
+
+.show-search-result{
+    color: rgb(255, 0, 0);
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn-music-search-playlist{
+    color: white;
+    background-color: black;
+    border: 0;
+    font-size: 1.3rem;
+    padding: 12px;
+    width: 75%;
+    text-transform: uppercase;
+    margin-top: 5px;
+}
